@@ -102,7 +102,7 @@
 
     <profiles>
     	<profile>
-    		<id>CucumberTests</id>
+    		<id>Regression</id>
      		<build>
 			    <pluginManagement>
 				    <plugins>
