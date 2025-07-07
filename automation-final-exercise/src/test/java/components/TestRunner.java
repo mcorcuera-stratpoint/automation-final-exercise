@@ -7,8 +7,7 @@ import io.cucumber.testng.CucumberOptions;
 	features="src/test/java/features", 
 	glue="stepdefinitions", 
 	monochrome=true, 
-	tags ="@TC22",
-	//plugin = {"pretty", "html:target/cucumber.html"}
+	tags ="@Regression",
 	plugin = {"pretty", "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"}
 	)
 

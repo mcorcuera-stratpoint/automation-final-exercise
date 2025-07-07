@@ -9,7 +9,7 @@ Feature: Test Case 8 - Verify All Products and Product Detail Page
     And I verify that the products list is visible
     When I click on view product of the <ordinal> product
     Then I verify that viewed product information is visible
-		And I close the browser
+    And I close the browser
 		
     #Note: Ordinal values are in string (First, Second, etc.)
     Examples: 

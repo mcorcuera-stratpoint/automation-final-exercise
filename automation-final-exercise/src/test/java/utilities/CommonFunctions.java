@@ -153,10 +153,8 @@ public class CommonFunctions {
 		case "Home":
 			//Checks if user is already on the page
 			if(!driver.getCurrentUrl().equals("https://automationexercise.com/")) {
-				home.click();	
-				if(Directory.homePage==null) {
-					Directory.homePage = new Home(driver);
-				}				
+				home.click();
+				Directory.homePage = new Home(driver);
 			}
 			break;
 			
@@ -164,9 +162,7 @@ public class CommonFunctions {
 			//Checks if user is already on the page
 			if(!driver.getCurrentUrl().equals("https://www.automationexercise.com/products")) {
 				products.click();
-				if(Directory.productsPage==null) {
-					Directory.productsPage = new Products(driver);
-				}
+				Directory.productsPage = new Products(driver);
 			}			
 			break;
 			
@@ -174,19 +170,16 @@ public class CommonFunctions {
 			//Checks if user is already on the page
 			if(!driver.getCurrentUrl().equals("https://www.automationexercise.com/view_cart")) {
 				cart.click();
-				if(Directory.cartPage==null) {
-					Directory.cartPage = new Cart(driver);
-				}
+				Directory.cartPage = new Cart(driver);
 			}			
 			break;
 			
 		case "Signup/Login":
+
 			//Checks if user is already on the page
 			if(!driver.getCurrentUrl().equals("https://www.automationexercise.com/login")) {
 				signup.click();
-				if(Directory.loginPage==null) {
-					Directory.loginPage = new Login(driver);
-				}
+				Directory.loginPage = new Login(driver);
 			}
 			break;
 			
@@ -194,9 +187,7 @@ public class CommonFunctions {
 			//Checks if user is already on the page
 			if(!driver.getCurrentUrl().equals("https://www.automationexercise.com/test_cases")) {
 				testCases.click();
-				if(Directory.testCasesPage==null) {
-					Directory.testCasesPage = new TestCases(driver);
-				}
+				Directory.testCasesPage = new TestCases(driver);
 			}
 			testCases.click();
 			break;
@@ -205,9 +196,7 @@ public class CommonFunctions {
 			//Checks if user is already on the page
 			if(!driver.getCurrentUrl().equals("https://www.automationexercise.com/contact_us")) {
 				contact.click();
-				if(Directory.contactUsPage==null) {
-					Directory.contactUsPage = new ContactUs(driver);
-				}
+				Directory.contactUsPage = new ContactUs(driver);
 			}
 			contact.click();
 			break;

@@ -1,4 +1,4 @@
-@Regression @TC14
+@Regression @E2E
 Feature: Test Case 14 - Place Order: Register while Checkout
 
   Scenario Outline: Go to cart page and checkout

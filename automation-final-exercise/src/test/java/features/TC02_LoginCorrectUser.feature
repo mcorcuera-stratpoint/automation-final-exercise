@@ -1,4 +1,4 @@
-@Regression @TC2
+@Regression
 Feature: Test Case 2 - Login User with Correct Email and Password
 
   Scenario Outline: Precondition - Create new user account
@@ -36,7 +36,7 @@ Feature: Test Case 2 - Login User with Correct Email and Password
       | header       | email | password     | user |
       | Signup/Login | auto  | Password123! | mvnc |
 
-  Scenario Outline: Delete Account
+  Scenario: Delete Account
     Given I delete the account
     Then I verify that account deleted message is visible
     And I close the browser

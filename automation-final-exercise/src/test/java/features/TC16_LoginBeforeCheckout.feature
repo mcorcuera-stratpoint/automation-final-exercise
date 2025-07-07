@@ -1,4 +1,4 @@
-@Regression
+@Regression @E2E
 Feature: Test Case 16 - Place Order: Login before Checkout
 
   Scenario Outline: Precondition - Create new user account
