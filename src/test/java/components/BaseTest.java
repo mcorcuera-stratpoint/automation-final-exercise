@@ -6,8 +6,6 @@ import java.time.Duration;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Properties;
-import java.util.concurrent.TimeUnit;
-
 import org.json.JSONObject;
 import org.openqa.selenium.Dimension;
 import org.openqa.selenium.WebDriver;
@@ -71,7 +69,9 @@ public class BaseTest{
 	
 	public static void launchBrowser() throws IOException {
 		driver = initializeDriver();
-		driver.get(Constants.BASE_URL);		
+		driver.get(Constants.BASE_URL);
+
+		//Initialize objects
 		common = new CommonFunctions(driver);
 		directory = new Directory(driver);
 		homePage = new Home(driver);

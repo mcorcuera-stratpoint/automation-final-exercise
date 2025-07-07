@@ -125,7 +125,6 @@ public class Cart {
 		
 		//Click X button
 		getCartDelete(product).click();
-		
     	Thread.sleep(Duration.ofSeconds(2));
 	}
 	
