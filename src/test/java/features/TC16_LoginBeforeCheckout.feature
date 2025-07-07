@@ -58,9 +58,9 @@ Feature: Test Case 16 - Place Order: Login before Checkout
     When I click place order
     Then I verify that payment page is displayed
 
-    Examples: 
-      | header | comment           |
-      | Cart   | Order comment 123 |
+    Examples:
+      | comment           |
+      | Order comment 123 |
 
   Scenario Outline: Enter Payment Details
     Given I enter payment details with <nameOnCard>, <cardNumber>, <cvc>, <expMonth>, <expYear>

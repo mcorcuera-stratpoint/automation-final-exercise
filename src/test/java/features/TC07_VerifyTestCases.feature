@@ -8,6 +8,6 @@ Feature: Test Case 7 - Verify Test Cases Page
     Then I verify that test cases heading is displayed
     And I close the browser
 
-    Examples: 
-      | header     | name        | email                 | subject        | message        | fileName             |
-      | Test Cases | Sample MVNC | sample_mvnc@email.com | Sample Subject | Sample Message | SampleAttachment.txt |
+    Examples:
+      | header     |
+      | Test Cases |

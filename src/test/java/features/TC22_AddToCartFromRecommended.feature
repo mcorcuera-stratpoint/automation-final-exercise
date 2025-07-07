@@ -10,6 +10,6 @@ Feature: Test Case 22 - Add to cart from Recommended items
     Then I verify that products are added to cart
     And I close the browser
 
-    Examples: 
-      | header | product  |
-      | Cart   | Blue Top |
+    Examples:
+      | product  |
+      | Blue Top |
