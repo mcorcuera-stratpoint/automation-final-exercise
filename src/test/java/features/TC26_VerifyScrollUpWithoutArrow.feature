@@ -1,4 +1,4 @@
-@Regression
+@Regression @TC26
 Feature: Test Case 26 - Verify Scroll Up Without Using Arrow and Scroll Down Functionality
 
   Scenario: Scroll Down and Scroll Up in Home Page

@@ -1,4 +1,4 @@
-@Regression
+@Regression @TC18
 Feature: Test Case 18 - View Category Products
 
   Scenario Outline: Go to any product sub-category under Women

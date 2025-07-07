@@ -1,4 +1,4 @@
-@Regression
+@Regression @TC17
 Feature: Test Case 17 - Remove Products From Cart
 
   Scenario Outline: Add Products to Cart

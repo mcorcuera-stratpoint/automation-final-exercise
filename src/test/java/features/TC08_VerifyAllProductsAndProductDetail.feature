@@ -1,4 +1,4 @@
-@Regression
+@Regression @TC8
 Feature: Test Case 8 - Verify All Products and Product Detail Page
 
   Scenario Outline: View Product

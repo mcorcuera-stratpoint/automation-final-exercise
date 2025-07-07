@@ -1,4 +1,4 @@
-@Regression
+@Regression @TC10
 Feature: Test Case 10 - Verify Subscription in Home Page
 
   Scenario Outline: Subscribe to the website in home page

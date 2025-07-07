@@ -1,4 +1,4 @@
-@Regression
+@Regression @TC20
 Feature: Test Case 20 - Search Products and Verify Cart After Login
 
   Scenario Outline: Search Product

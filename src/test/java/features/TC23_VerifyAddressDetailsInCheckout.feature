@@ -1,4 +1,4 @@
-@Regression
+@Regression @TC23
 Feature: Test Case 23 - Place Order: Register before Checkout
 
   Scenario Outline: Create new user account

@@ -1,4 +1,4 @@
-@Regression @E2E
+@Regression @TC15
 Feature: Test Case 15 - Place Order: Register before Checkout
 
   Scenario Outline: Create new user account

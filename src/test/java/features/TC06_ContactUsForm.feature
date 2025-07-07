@@ -1,4 +1,4 @@
-@Regression
+@Regression @TC6
 Feature: Test Case 6 - Contact Us Form
 
   Scenario Outline: Submit Contact Us Form

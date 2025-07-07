@@ -1,4 +1,4 @@
-@Regression
+@Regression @TC1
 Feature: Test Case 1 - Register User
 
   Scenario Outline: Create new user account

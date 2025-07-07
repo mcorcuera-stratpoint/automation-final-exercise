@@ -1,4 +1,4 @@
-@Regression
+@Regression @TC12
 Feature: Test Case 12 - Add Products in Cart
 
   Scenario Outline: Add Products in Cart
@@ -15,7 +15,7 @@ Feature: Test Case 12 - Add Products in Cart
       | header   | firstProduct | secondProduct |
       | Products | Blue Top     | Men Tshirt    |
 
-  Scenario Outline: View Cart
+  Scenario: View Cart
     Given I click view cart
     Then I verify that products are added to cart
     And I verify that cart details are correct

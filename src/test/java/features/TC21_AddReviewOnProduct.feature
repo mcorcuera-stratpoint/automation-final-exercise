@@ -1,4 +1,4 @@
-@Regression
+@Regression @TC21
 Feature: Test Case 21 - Add Review on Product
 
   Scenario Outline: View Product

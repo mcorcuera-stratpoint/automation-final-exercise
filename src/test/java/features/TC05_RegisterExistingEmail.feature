@@ -1,4 +1,4 @@
-@Regression
+@Regression @TC5
 Feature: Test Case 5 - Register User with existing email
 
   Scenario Outline: Create new account using an existing email

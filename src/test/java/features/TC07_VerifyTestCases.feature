@@ -1,4 +1,4 @@
-@Regression
+@Regression @TC7
 Feature: Test Case 7 - Verify Test Cases Page
 
   Scenario Outline: Navigate to Test Cases Page

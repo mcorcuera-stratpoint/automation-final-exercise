@@ -1,4 +1,4 @@
-@Regression
+@Regression @TC11
 Feature: Test Case 11 - Verify Subscription in Cart Page
 
   Scenario Outline: Subscribe to the website in cart page

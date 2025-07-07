@@ -1,4 +1,4 @@
-@Regression
+@Regression @TC3
 Feature: Test Case 3 - Login User with Incorrect Email and Password
 
   Scenario Outline: Login using incorrect email and password

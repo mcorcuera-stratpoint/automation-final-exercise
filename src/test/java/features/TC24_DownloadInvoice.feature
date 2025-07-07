@@ -1,4 +1,4 @@
-@Regression
+@Regression @TC24
 Feature: Test Case 24 - Download Invoice after purchase order
 
   Scenario Outline: Go to cart page and checkout

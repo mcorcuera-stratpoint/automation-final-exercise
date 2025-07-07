@@ -1,4 +1,4 @@
-@Regression
+@Regression @TC22
 Feature: Test Case 22 - Add to cart from Recommended items
 
   Scenario Outline: Add recommended item to cart

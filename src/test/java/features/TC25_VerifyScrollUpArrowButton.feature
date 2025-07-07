@@ -1,4 +1,4 @@
-@Regression
+@Regression @TC25
 Feature: Test Case 25 - Verify Scroll Up Using Arrow and Scroll Down Functionality
 
   Scenario: Click Scroll Up Arrow in Home Page

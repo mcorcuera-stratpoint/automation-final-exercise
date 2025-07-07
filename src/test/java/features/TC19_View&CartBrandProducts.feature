@@ -1,4 +1,4 @@
-@Regression
+@Regression @TC19
 Feature: Test Case 19 - View & Cart Brands Products
 
   Scenario Outline: Go to any brands on product page

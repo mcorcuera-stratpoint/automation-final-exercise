@@ -1,4 +1,4 @@
-@Regression
+@Regression @TC2
 Feature: Test Case 2 - Login User with Correct Email and Password
 
   Scenario Outline: Precondition - Create new user account

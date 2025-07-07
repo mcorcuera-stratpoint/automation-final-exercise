@@ -1,4 +1,4 @@
-@Regression
+@Regression @TC9
 Feature: Test Case 9 - Search Product
 
   Scenario Outline: Search Product

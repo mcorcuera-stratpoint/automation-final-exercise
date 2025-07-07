@@ -1,4 +1,4 @@
-@Regression
+@Regression @TC4
 Feature: Test Case 4 - Logout User
 
   Scenario Outline: Login using correct email and password

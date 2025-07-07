@@ -1,4 +1,4 @@
-@Regression
+@Regression @TC13
 Feature: Test Case 13 - Verify Product Quantity In Cart
 
   Scenario Outline: View Product
