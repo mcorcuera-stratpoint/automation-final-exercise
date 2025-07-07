@@ -4,11 +4,10 @@ import java.io.IOException;
 import java.time.Duration;
 import org.testng.Assert;
 import components.BaseTest;
-
-import static utilities.CommonFunctions.*;
-
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
+import pageobjects.Directory;
+import static utilities.CommonFunctions.*;
 
 public class DirectoryStepDef extends BaseTest{
 	
@@ -19,7 +18,7 @@ public class DirectoryStepDef extends BaseTest{
 	
 	@Given("^I landed on (.+) page$")
 	public void I_landed_on_header_page(String header) {
-		goToHeader(header);
+		directory.goToHeader(header);
 	}
 	
 	@And("I scroll to the bottom of the page")
