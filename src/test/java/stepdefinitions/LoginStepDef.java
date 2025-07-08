@@ -43,7 +43,6 @@ public class LoginStepDef{
 		if(email.equals("auto")) {
 			email = getCache("cache_email");
 		}
-		
 		Directory.loginPage.login(email, password);
 	}
 	

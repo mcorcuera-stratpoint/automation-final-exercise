@@ -1,6 +1,5 @@
-package stepdefinitions;
+package hooks;
 
-import java.io.File;
 import java.io.IOException;
 
 import org.openqa.selenium.OutputType;
@@ -19,8 +18,6 @@ public class Hooks{
             final byte[] screenshot = ((TakesScreenshot) BaseTest.getDriver()).getScreenshotAs(OutputType.BYTES);
             scenario.attach(screenshot, "image/png", scenario.getName());
             BaseTest.closeBrowser();
-        }   
-       
+        }
     }
-	
 }

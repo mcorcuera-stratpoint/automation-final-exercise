@@ -8,7 +8,7 @@ public class CacheHelper {
 	private static CacheHelper cache;
 	
 	public CacheHelper(){
-	    scenarioContext = new HashMap<>();
+		scenarioContext = new HashMap<>();
 	}
 	
 	public static CacheHelper getInstance(){
@@ -21,10 +21,10 @@ public class CacheHelper {
 	}
 	
 	public void setContext(String key, Object value) {
-	    scenarioContext.put(key, value);
+		scenarioContext.put(key, value);
 	}
 	
 	public Object getContext(String key){
-	    return scenarioContext.get(key);
+		return scenarioContext.get(key);
 	}
 }

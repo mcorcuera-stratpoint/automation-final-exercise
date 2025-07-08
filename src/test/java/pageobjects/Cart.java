@@ -50,11 +50,6 @@ public class Cart {
 	@FindBy(xpath="//li[contains(text(), 'Shopping Cart')]")
 	private WebElement shoppingCart;
 	
-	public List<WebElement> getCartItems(){
-		List<WebElement> cartItems = cartTable.findElements(By.xpath(".//tbody/tr[contains(@id, 'product')]"));
-		return cartItems;
-	}
-	
 	//Dynamic Page Objects
 	public WebElement getCartDelete(String product) {
 		return driver.findElement(By.xpath(String.format("//td[@class='cart_description']//a[contains(text(), '%s')]" + "/parent::h4/parent::td/parent::tr//td[@class='cart_delete']//a", product)));
@@ -116,6 +111,11 @@ public class Cart {
 	
 	public WebElement getPlaceOrderButton() {
 		return placeOrderBtn;
+	}
+
+	public List<WebElement> getCartItems(){
+		List<WebElement> cartItems = cartTable.findElements(By.xpath(".//tbody/tr[contains(@id, 'product')]"));
+		return cartItems;
 	}
 		
 	//Page methods

@@ -12,6 +12,6 @@ Feature: Test Case 4 - Logout User
     Then I verify that login to your account is visible
     And I close the browser
 
-    Examples: 
+    Examples:
       | header       | email                 | password | user        |
-      | Signup/Login | sample_mvnc@email.com |      123 | sample_mvnc |
+      | Signup/Login | sample_mvnc@email.com | 123      | sample_mvnc |

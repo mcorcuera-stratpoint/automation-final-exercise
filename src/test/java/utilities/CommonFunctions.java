@@ -75,16 +75,6 @@ public class CommonFunctions {
 		js.executeScript("window.scrollBy(0,0)", "");
 	}
 	
-	public static String takeScreenshot(String testCase, WebDriver driver) throws IOException {
-		LocalDateTime currentDateTime = LocalDateTime.now();
-    	String path = System.getProperty("user.dir")+ "//extent-reports//screenshots//" + testCase + "_" + currentDateTime.toString() + ".png";
-    	File source = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-    	File file = new File(path);
-    	FileUtils.copyFile(source, file);
-    	
-    	return path;
-	}
-	
 	public static int ordinalStringToInteger(String ordinal) throws java.text.ParseException {
 		RuleBasedNumberFormat formatter = new RuleBasedNumberFormat( Locale.US , RuleBasedNumberFormat.SPELLOUT );
 		int result = 0;
