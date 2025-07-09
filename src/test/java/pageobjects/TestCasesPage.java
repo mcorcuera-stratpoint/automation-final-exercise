@@ -1,25 +1,17 @@
 package pageobjects;
 
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import static components.BaseTest.*;
 
-public class TestCases {
-	WebDriver driver;
+public class TestCasesPage {
 	
-	public TestCases(WebDriver driver){
-		this.driver = driver;
+	public TestCasesPage(){
 		PageFactory.initElements(driver, this);
 	}
 	
 	//PageFactory
 	@FindBy(xpath="//b[contains(text(), 'Test Cases')]")
-	private WebElement testCasesHeading;
-		
-	//Getters
-	public WebElement getTestCasesHeading() {
-		return testCasesHeading;
-	}
-	
+	public WebElement testCasesHeading;
 }

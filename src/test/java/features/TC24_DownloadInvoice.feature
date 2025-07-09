@@ -52,8 +52,9 @@ Feature: Test Case 24 - Download Invoice after purchase order
     Given I enter payment details with <nameOnCard>, <cardNumber>, <cvc>, <expMonth>, <expYear>
     When I click pay and confirm order
     And I verify that successful order message is displayed
-		And I click on download invoice
-		Then I verify that invoice is downloaded successfully
+    And I click on download invoice
+    Then I verify that invoice is downloaded successfully
+    And I delete invoice
 		
     Examples: 
       | nameOnCard  | cardNumber | cvc | expMonth | expYear |

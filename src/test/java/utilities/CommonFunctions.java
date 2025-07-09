@@ -7,7 +7,6 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.time.Duration;
-import java.time.LocalDateTime;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Locale;
@@ -18,33 +17,26 @@ import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.NoAlertPresentException;
-import org.openqa.selenium.OutputType;
-import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.FluentWait;
 import org.openqa.selenium.support.ui.Wait;
-
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.ibm.icu.text.RuleBasedNumberFormat;
-
-import components.CacheHelper;
 import io.cucumber.cienvironment.internal.com.eclipsesource.json.ParseException;
-import pageobjects.*;
+import components.CacheHelper;
+import static components.BaseTest.*;
 
 public class CommonFunctions {
-	static WebDriver driver;
 	static Wait<WebDriver> wait;
 	static Actions action;
 		
-	public CommonFunctions(WebDriver driver) {
+	public CommonFunctions() {
 		PageFactory.initElements(driver, this);
-		CommonFunctions.driver = driver;
 		CommonFunctions.action = new Actions(driver);
 		CommonFunctions.wait = new FluentWait<>(driver).withTimeout(Duration.ofSeconds(5))
 													   .pollingEvery(Duration.ofMillis(500))
@@ -56,7 +48,8 @@ public class CommonFunctions {
 			wait.until(ExpectedConditions.visibilityOf(element));
 			
 		} catch (Exception e) {
-			
+			log.error("Exception occurred in waitForElement(): " + e.getMessage());
+			throw e;
 		}		
 	}
 	

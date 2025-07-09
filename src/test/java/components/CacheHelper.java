@@ -4,8 +4,8 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class CacheHelper {
-	private Map<String, Object> scenarioContext;
-	private static CacheHelper cache;
+	public Map<String, Object> scenarioContext;
+	public static CacheHelper cache;
 	
 	public CacheHelper(){
 		scenarioContext = new HashMap<>();

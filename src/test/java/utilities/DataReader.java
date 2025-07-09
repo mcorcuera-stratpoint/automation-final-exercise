@@ -11,7 +11,6 @@ import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 public class DataReader {
-		
 		public static String getTextFromFile(String path, String fileName) throws IOException {
 			String textContent ="";
 			

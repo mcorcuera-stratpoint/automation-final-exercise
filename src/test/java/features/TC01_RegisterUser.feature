@@ -14,7 +14,7 @@ Feature: Test Case 1 - Register User
     Then I verify that a new user account is created
 
     #Note: addressLine format (values separated by comma with no space) -> address1,address2,country,state,city,zipcode
-    Examples: 
+    Examples:
       | header       | name | email | title | password     | birthDate  | news | offers | fName | lName    | company | mobile           | addressLine                                             |
       | Signup/Login | mvnc | auto  | Mr    | Password123! | 01-04-2000 | true | true   | mvnc  | exercise | sPoint  | +63 123 456 7890 | Street 1,Village 1,United States,Illinois,Chicago,12345 |
 

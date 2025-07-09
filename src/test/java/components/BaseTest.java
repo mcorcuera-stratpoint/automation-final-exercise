@@ -12,21 +12,19 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import io.github.bonigarcia.wdm.WebDriverManager;
-import pageobjects.Home;
-import pageobjects.Products;
+import org.apache.logging.log4j.core.Logger;
+import pageobjects.DirectoryPage;
 import utilities.CommonFunctions;
 import utilities.Constants;
-import pageobjects.Directory;
-import static pageobjects.Directory.homePage;
-import static pageobjects.Directory.productsPage;
 
 public class BaseTest{
 	
 	public static CacheHelper cache;
-	public static JSONObject cart;
-	public static Directory directory;
+	public static JSONObject cartJson;
+	public static DirectoryPage directory;
 	public static CommonFunctions common;
 	public static WebDriver driver;
+	public static Logger log;
 	
 	public static WebDriver initializeDriver() throws IOException {
 		Properties prop = new Properties();
@@ -72,12 +70,9 @@ public class BaseTest{
 		driver.get(Constants.BASE_URL);
 
 		//Initialize objects
-		common = new CommonFunctions(driver);
-		directory = new Directory(driver);
-		homePage = new Home(driver);
-		productsPage = new Products(driver);
+		common = new CommonFunctions();
 		cache = new CacheHelper();
-		cart = new JSONObject();
+		cartJson = new JSONObject();
 	}
 	
 	public static void closeBrowser() {
@@ -87,5 +82,4 @@ public class BaseTest{
 	public static WebDriver getDriver() {
 		return driver;
 	}
-	
 }
